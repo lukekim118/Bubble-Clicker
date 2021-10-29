@@ -1,4 +1,5 @@
 import { useState } from "react";
+//testing
 const Main = () => {
     const [bubbles, setBubbles] = useState(0);
     const [school, setSchool] = useState("Kindergarten");
