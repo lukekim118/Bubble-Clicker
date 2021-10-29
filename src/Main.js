@@ -7,6 +7,7 @@ const Main = () => {
     const [clickPower, setClickPower] = useState(1);
     const [upgrade, setUpgrade] = useState(1);
     const [cost, setCost] =useState(1);
+    const [win, setWin] = useState(false);
     const handleBubble = () => {
         setBubbles(bubbles + clickPower);
     }
@@ -53,6 +54,8 @@ const Main = () => {
             setCost(4);
         } else if(school==="Professional" && grade===""){
             setSchool("World Class")
+        } else if(school==="World Class"){
+            setWin(true);
         }
     }
     const handleClick = () => {
@@ -64,7 +67,7 @@ const Main = () => {
     }
     return (
         <div className="home">
-            <div className="title">
+            {!win ? <><div className="title">
                 <h1>BUBBLE CLICKER</h1>
             </div>
             <div>
@@ -81,7 +84,9 @@ const Main = () => {
                     <h3>CLICK POWER : {clickPower}</h3>
                     <h3>UPGRADE AMOUNT : {upgrade}</h3>
                 </div>
-            </div>
+            </div></>
+            :
+            <div><h1>CONGRATULATIONS YOU WIN THE GAME</h1></div>}
         </div>
 
       );
