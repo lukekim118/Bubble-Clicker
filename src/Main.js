@@ -9,9 +9,20 @@ const Main = () => {
     const [upgrade, setUpgrade] = useState(1);
     const [cost, setCost] =useState(100);
     const [win, setWin] = useState(false);
+    const [bubblePopped, setBubblePopped] = useState(false);
+    
+    const timeOut = () => {
+        setTimeout(() => {
+            setBubblePopped(false);
+        }, 1000);
+    }
+    
     const handleBubble = () => {
         setBubbles(bubbles + clickPower);
+        setBubblePopped(true);
+        timeOut();
     }
+
     const handleUpgrade = () => {
             if(school==="College"){
                 setUpgrade(upgrade*2);
@@ -77,7 +88,7 @@ const Main = () => {
             <div>
                 <div onClick={handleBubble} className="bubble">
                     <p>BUBBLES : {bubbles}</p>
-                    <img src ="/images/bubble.gif"></img>
+                    <img src ={bubblePopped ? "/images/bubble.gif" : "images/bubbleStatic.jpg"} className="bubbleImg"></img>
                 </div>
                 <div className="school">
                     <p>Cost {cost} bubbles</p>
