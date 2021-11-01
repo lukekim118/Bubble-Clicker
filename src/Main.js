@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import { useState } from "react";
 //testing
 const Main = () => {
@@ -6,7 +7,7 @@ const Main = () => {
     const [grade, setGrade] = useState(0);
     const [clickPower, setClickPower] = useState(1);
     const [upgrade, setUpgrade] = useState(1);
-    const [cost, setCost] =useState(1);
+    const [cost, setCost] =useState(100);
     const [win, setWin] = useState(false);
     const handleBubble = () => {
         setBubbles(bubbles + clickPower);
@@ -34,26 +35,29 @@ const Main = () => {
             setSchool("Elementary School");
         } else if(school==="Elementary School"&&grade>=5){
             setSchool("Middle School");
+            setCost(1000)
         } else if (school === "Middle School"&&grade>= 8){
             setSchool("High School");
+            setCost(3000)
         } else if (grade===12){
             setSchool("College");
             setGrade(1);
-            setCost(3)
+            setCost(30000)
         } else if(school==="College" && grade===4){
             setSchool("Masters");
             setGrade(1);
-            setCost(2);
+            setCost(200000);
         } else if(school==="Masters"&& grade===3) {
             setSchool("Phd");
             setGrade(1);
-            setCost(3);
+            setCost(10000000);
         } else if(school==="Phd"&& grade===4){
             setSchool("Professional");
             setGrade("");
-            setCost(4);
+            setCost(1000000000);
         } else if(school==="Professional" && grade===""){
             setSchool("World Class")
+            setCost(1000000000000)
         } else if(school==="World Class"){
             setWin(true);
         }
