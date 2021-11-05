@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Bubble-Clicker/static/css/main.8f61c545.chunk.css",
+    "main.js": "/Bubble-Clicker/static/js/main.04b52a3e.chunk.js",
+    "main.js.map": "/Bubble-Clicker/static/js/main.04b52a3e.chunk.js.map",
+    "runtime-main.js": "/Bubble-Clicker/static/js/runtime-main.74a46015.js",
+    "runtime-main.js.map": "/Bubble-Clicker/static/js/runtime-main.74a46015.js.map",
+    "static/js/2.f6850b10.chunk.js": "/Bubble-Clicker/static/js/2.f6850b10.chunk.js",
+    "static/js/2.f6850b10.chunk.js.map": "/Bubble-Clicker/static/js/2.f6850b10.chunk.js.map",
+    "index.html": "/Bubble-Clicker/index.html",
+    "static/css/main.8f61c545.chunk.css.map": "/Bubble-Clicker/static/css/main.8f61c545.chunk.css.map",
+    "static/js/2.f6850b10.chunk.js.LICENSE.txt": "/Bubble-Clicker/static/js/2.f6850b10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74a46015.js",
+    "static/js/2.f6850b10.chunk.js",
+    "static/css/main.8f61c545.chunk.css",
+    "static/js/main.04b52a3e.chunk.js"
+  ]
+}
